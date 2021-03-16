@@ -41,5 +41,5 @@ module "org-email" {
 }
 
 output "zones" {
-  value     = module.zones
+  value = module.zones
 }
