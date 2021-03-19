@@ -40,6 +40,11 @@ module "org-email" {
   hosted-zone = module.zones["org"].hosted-zone
 }
 
+module "verifications" {
+  source      = "./verifications"
+  hosted-zone = module.zones["org"].hosted-zone
+}
+
 output "zones" {
   value = module.zones
 }
